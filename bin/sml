@@ -1,0 +1,10 @@
+#!/bin/bash
+# vim: set filetype=bash ;
+
+SML_VERSION=110.82
+
+docker run --rm -it \
+	-v $(pwd):/src \
+	-w /src \
+	smlnj:${SML_VERSION} "$@"
+
